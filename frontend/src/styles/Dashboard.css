@@ -1,0 +1,149 @@
+/* Reset Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .dashboard-container {
+    padding: 40px 0;
+    background-color: #f8fafc; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard-container h1 {
+    font-size: 34px;
+    color: #2f4050;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .dashboard-container .trade-section,
+  .dashboard-container .market-section,
+  .dashboard-container .portfolio-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    animation: zoomIn 0.6s ease-out;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .dashboard-container h2 {
+    font-size: 22px;
+    color: #2f4050;
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-bottom: 3px solid #1abc9c;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .dashboard-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dashboard-container .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-container .form-group label {
+    display: block;
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .dashboard-container .form-group input,
+  .dashboard-container .form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #e8ecef;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .dashboard-container .form-group input:focus,
+  .dashboard-container .form-group select:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.3);
+  }
+  
+  .dashboard-container button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .dashboard-container button:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+  }
+  
+  .dashboard-container button:active {
+    transform: translateY(0);
+  }
+  
+  .dashboard-container .error {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: #fef0f0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .dashboard-container ul {
+    list-style: none;
+  }
+  
+  .dashboard-container li {
+    padding: 15px 0;
+    color: #7f8c8d;
+    border-bottom: 1px solid #e8ecef;
+  }
+  
+  .dashboard-container li:last-child {
+    border-bottom: none;
+  }
+  
+  .dashboard-container li span {
+    color: #2f4050;
+    font-weight: 500;
+  }
+  
+  .dashboard-container .price {
+    color: #1abc9c;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container h1 {
+      font-size: 28px;
+    }
+  
+    .dashboard-container .trade-section,
+    .dashboard-container .market-section,
+    .dashboard-container .portfolio-section {
+      padding: 20px;
+    }
+  }
